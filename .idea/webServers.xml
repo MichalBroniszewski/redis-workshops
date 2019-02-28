@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="4cc914d3-b435-4b7a-8502-02025c2bf3bf" name="docker" url="http://192.168.123.123">
+        <fileTransfer host="192.168.123.123" port="22" privateKey="$PROJECT_DIR$/../../../private/vagrant-docker/.vagrant/machines/ubuntu-developer/virtualbox/private_key" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,30 @@
+#!/usr/bin/env php
+<?php
+declare(strict_types=1);
+
+/**
+ * File:console.php
+ *
+ * @author Maciej Sławik <maciej.slawik@lizardmedia.pl>
+ * @copyright Copyright (C) 2019 Lizard Media (http://lizardmedia.pl)
+ */
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use LizardMedia\RedisVsFiles\Command\ArrayCacheCommand;
+use LizardMedia\RedisVsFiles\Command\HashCacheCommand;
+use LizardMedia\RedisVsFiles\Command\StringCacheCommand;
+use Symfony\Component\Console\Application;
+use Dotenv\Dotenv;
+
+$dotenv = Dotenv::create(__DIR__ . '/..');
+$dotenv->load();
+
+$app = new Application('Gildia PHP', '1.0.0');
+
+$app->add(new ArrayCacheCommand());
+$app->add(new HashCacheCommand());
+$app->add(new StringCacheCommand());
+
+$app->run();
+

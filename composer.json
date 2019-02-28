@@ -1,0 +1,24 @@
+{
+    "name": "lizardmedia/gildia-php-redis",
+    "description": "Środowisko dla warsztatów Gildii PHP - Redis",
+    "license": [
+        "MIT"
+    ],
+    "authors": [
+        {
+            "name": "Maciej Sławik",
+            "email": "maciekslawik@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3",
+        "ext-redis": "*",
+        "psr/cache": "^1.0",
+        "symfony/console": "^4.2",
+        "vlucas/phpdotenv": "^3.3"
+    },
+    "autoload": {
+        "psr-4": {"LizardMedia\\RedisVsFiles\\": "src"}
+    }
+
+}
